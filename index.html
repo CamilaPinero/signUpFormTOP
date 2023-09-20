@@ -3,8 +3,113 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="styles.css"></script>
-		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap");
+		</style>
+		<link rel="stylesheet" href="styles.css" />
+		<title>signUp Form</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="left">
+			<img src="assets/plants.jpg" alt="plants photo" />
+			<div class="banner">
+				<img src="assets/logo cala.png" alt="@reina.calathea logo" />
+				<h1 class="title">Reina Calathea</h1>
+			</div>
+		</div>
+		<div class="right">
+			<div class="box">
+				<h5 class="description">
+					This is not a real online service! You know you need
+					something like this in your life to help you realize your
+					deepest dreams.
+					<br />
+					Sign up <i>now</i> to get started.
+				</h5>
+				<h5 class="description">You <i>know</i> you want to.</h5>
+				<form class="card">
+					<legend class="form-title">Let's do this!</legend>
+					<div class="mb-3">
+						<label for="first-name">First Name:</label>
+						<input
+							type="text"
+							id="first-name"
+							name="first-name"
+							placeholder="Your name here"
+							required
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="last-name">Last Name:</label>
+						<input
+							type="text"
+							id="last-name"
+							name="last-name"
+							placeholder="Your lastname here"
+							required
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="yourMail@here.com"
+							required
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="phone_number">Phone Number:</label>
+						<input
+							type="tel"
+							id="phone_number"
+							name="phone_number"
+							placeholder="222-333"
+							required
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="user_password">Password:</label>
+						<input
+							type="password"
+							id="user_password"
+							name="password"
+							required
+							onkeyup="checkPassword()"
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="confirm_password">Confirm Password:</label>
+						<input
+							type="password"
+							id="confirm_password"
+							name="password"
+							required
+							onkeyup="checkPassword()"
+						/>
+						<p class="message"></p>
+					</div>
+					<div class="mb-3">
+						<button type="submit" class="btn">
+							Create Account
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="script.js"></script>
+	</body>
 </html>
